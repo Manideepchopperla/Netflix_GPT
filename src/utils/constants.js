@@ -15,6 +15,8 @@ export const TOPRATEDAPI="https://api.themoviedb.org/3/movie/top_rated?page=1"
 
 export const UPCOMINGAPI="https://api.themoviedb.org/3/movie/upcoming?page=1"
 
+export const TRENDINGAPI = "https://api.themoviedb.org/3/trending/movie/day"
+
 export const API_OPTIONS = {
     method: 'GET',
     headers: {
@@ -22,3 +24,5 @@ export const API_OPTIONS = {
       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMTQwMjE5MDM1Yzk3YzMzODkzNTc4NTRiNDU5ODdmZCIsIm5iZiI6MTczOTEwMzc0My45MzgsInN1YiI6IjY3YTg5ZGZmZGY1NWU4ZjIxM2YxMmUyNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.pUx6o9cqFiOpmlkfpEDlcFx43GvuaNegu8N8TQJ11rQ'
     }
   };
+
+  export const IMG_CDN_URL= "https://image.tmdb.org/t/p/w780"
