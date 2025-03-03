@@ -8,8 +8,10 @@ import {
 } from "firebase/auth";
 import { addUser } from "../utils/userSlice";
 import { auth } from "../utils/Firebase";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { BANNER, USER_AVATAR } from "../utils/constants";
+import Lang from "../utils/languageConstants"
+
 
 const Login = () => {
   const [isSignInForm, setSignInForm] = useState(true);
@@ -18,6 +20,9 @@ const Login = () => {
   const name = useRef(null);
   const email = useRef(null);
   const password = useRef(null);
+
+  const langMode = useSelector(store=>store.config.lang)
+ 
   const handleButtonClick = () => {
     const message = checkValidData(email.current.value, password.current.value);
     setErrorMessage(message);
@@ -82,22 +87,22 @@ const Login = () => {
         onSubmit={(e)=>e.preventDefault()}
         className='rounded-lg absolute w-4/12 p-12 bg-black/80 my-36 mx-auto right-0 left-0 '
       >
-        <h1 className='text-white font-bold text-3xl p-2 py-3'>{isSignInForm?"Sign In":"Sign Up"}</h1>
+        <h1 className='text-white font-bold text-3xl p-2 py-3'>{isSignInForm?Lang[langMode].SignIn:Lang[langMode].SignUp}</h1>
         {!isSignInForm && <input 
           type='text' 
-          placeholder='Full Name' 
+          placeholder={Lang[langMode].NamePlaceholder} 
           ref={name} 
           className=' p-2 my-3 text-md rounded-[5px] text-white w-full border-[#867979] bg-transparent border-[1px] outline-none '
         />}
         <input 
           type='text' 
-          placeholder='Email Address' 
+          placeholder={Lang[langMode].EmailPlaceholder}
           ref={email} 
           className='p-2 my-3 text-md rounded-[5px] text-white w-full border-[#867979]  bg-transparent border-[1px] outline-none '
         />
         <input 
           type='password' 
-          placeholder='Password' 
+          placeholder={Lang[langMode].PasswordPlaceholder}
           ref={password}
           className='text-md rounded-[5px] text-white p-2 my-3 w-full  bg-transparent border-[#867979] border-[1px] outline-none'  
         />
@@ -105,10 +110,10 @@ const Login = () => {
         <button 
         className='text-white bg-red-700 p-2 my-4 w-full rounded-[5px] opacity' onClick={handleButtonClick}
         >
-        {isSignInForm?"Sign In":"Sign Up"}
+        {isSignInForm?Lang[langMode].SignIn:Lang[langMode].SignUp}
         </button>
         <p className='text-white font-normal py-4'>
-        {isSignInForm?"New to Netflix":"Already Registered"}? <span className='font-bold cursor-pointer underline' onClick={toggleSignInForm}> {isSignInForm?"Sign Up Now":"Sign In Now"}.</span> 
+        {isSignInForm?Lang[langMode].New_to_Netflix:Lang[langMode].Already_have_an_Account} <span className='font-bold cursor-pointer underline' onClick={toggleSignInForm}> {isSignInForm?Lang[langMode].Sign_up_now:Lang[langMode].Sign_in_now}</span> 
         </p>
       </form>
     </div>

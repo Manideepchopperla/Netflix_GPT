@@ -8,7 +8,7 @@ const Upcoming = () => {
   const getUpcomingMoviesApi = async () => {
     const temp = await fetch(UPCOMINGAPI,API_OPTIONS)
     const data = await temp.json()
-    console.log(data.results[3])
+
     dispatch(addUpcomingMovies(data.results))
   }
 

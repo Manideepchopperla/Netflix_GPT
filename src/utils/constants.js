@@ -1,3 +1,5 @@
+
+
 export const LOGO=
     "https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"
 
@@ -15,14 +17,26 @@ export const TOPRATEDAPI="https://api.themoviedb.org/3/movie/top_rated?page=1"
 
 export const UPCOMINGAPI="https://api.themoviedb.org/3/movie/upcoming?page=1"
 
-export const TRENDINGAPI = "https://api.themoviedb.org/3/trending/movie/day"
+export const TRENDINGAPI = "https://api.themoviedb.org/3/trending/movie/day?language=en-US"
 
 export const API_OPTIONS = {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMTQwMjE5MDM1Yzk3YzMzODkzNTc4NTRiNDU5ODdmZCIsIm5iZiI6MTczOTEwMzc0My45MzgsInN1YiI6IjY3YTg5ZGZmZGY1NWU4ZjIxM2YxMmUyNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.pUx6o9cqFiOpmlkfpEDlcFx43GvuaNegu8N8TQJ11rQ'
+      Authorization: 'Bearer ' + process.env.REACT_APP_TMDB_API_KEY
     }
   };
 
   export const IMG_CDN_URL= "https://image.tmdb.org/t/p/w780"
+
+  export const SUPPORTED_LANGUAGES = [
+    { identifier: "en", name: "English" },
+    { identifier: "hindi", name: "Hindi" },
+    { identifier: "spanish", name: "Spanish" },
+    {identifier:"telugu" ,name: "Telugu"},
+    {identifier:"tamil",name:"Tamil"},
+    {identifier:"marathi",name:"Marathi"},
+    {identifier:"french",name:"French"}
+  ];
+
+  export const GEMINI_API_KEY = process.env.REACT_APP_GEMINI_API_KEY
