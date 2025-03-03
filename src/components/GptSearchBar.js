@@ -46,16 +46,16 @@ I'd suggest: Stree"`;
       {/* Search Form */}
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 p-8 bg-black/80 rounded-lg flex justify-center items-center"
+        className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full p-8 bg-black/80 rounded-lg flex justify-center items-center mt-[15%] md:mt-[0%] md:w-3/4 "
       >
         <input
           ref={searchText}
           type="text"
           placeholder={Lang[langMode].gptSearchPlaceholder}
-          className="p-2 text-md rounded-md text-white w-[70vw] border-[#867979] bg-transparent border-[1px] outline-none"
+          className="p-2 text-md rounded-md text-white w-[70vw] border-[#867979] bg-transparent border-[1px] ml-4 outline-none md:ml-0"
         />
         <button
-          className="text-white bg-red-700 p-2 mx-4 w-[10vw] rounded-md"
+          className="text-white bg-red-700 p-2 mx-4 w-1/2 md:w-[10vw] rounded-md"
           onClick={handleGptSearch}
         >
           {Lang[langMode].search}

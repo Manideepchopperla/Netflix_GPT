@@ -81,11 +81,11 @@ const Login = () => {
       <Header />
       <div className='absolute'>
         <img src={BANNER}
-            alt="bg-img" className="h-100"  />
+            alt="bg-img" className="h-screen object-cover"  />
       </div>
       <form 
         onSubmit={(e)=>e.preventDefault()}
-        className='rounded-lg absolute w-4/12 p-12 bg-black/80 my-36 mx-auto right-0 left-0 '
+        className='rounded-lg absolute w-full  md:w-4/12 p-12 bg-black/80 my-36 mx-auto right-0 left-0 '
       >
         <h1 className='text-white font-bold text-3xl p-2 py-3'>{isSignInForm?Lang[langMode].SignIn:Lang[langMode].SignUp}</h1>
         {!isSignInForm && <input 

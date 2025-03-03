@@ -19,7 +19,7 @@ const VideoTitle = (props) => {
       <h1 className="text-2xl md:text-4xl font-bold " >{title}</h1>
       <p className="hidden md:inline-block py-6 text-lg w-1/4" >{finalOverview}</p>
       <div className="my-4 md:m-0" >
-        <button className=" bg-white text-black py-1 md:py-3  md:px-9 text-xl  rounded-lg hover:bg-opacity-80" type="button" >► Play</button>
+        <button className=" bg-white text-black py-1 md:py-3  md:px-9 text-l px-3 py-2 md:text-xl  rounded-lg hover:bg-opacity-80" type="button" >► Play</button>
         <button className="hidden md:inline-block mx-2  bg-gray-500 p-3 px-9  text-white text-xl bg-opacity-50 rounded-lg" >ⓘ More Info</button>
       </div>
     </div>
