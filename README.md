@@ -51,7 +51,6 @@
 ...
 
 # ScreenShots
-<h2>Screenshots</h2>
 
 <h3>Signup Page & Browse Page</h3>
 <p align="center">
