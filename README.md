@@ -50,3 +50,56 @@
 - NetflixGPT
     - Search Bar
     - Movie Suggestions
+ 
+  
+...
+
+
+# Project Setup
+- Before starting the project please add .env file and add TMDB API and GEMINI AI API key into it.
+
+...
+
+# ScreenShots
+<h2>Screenshots</h2>
+
+<h3>Signup Page & Browse Page</h3>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f6c99b3f-99e5-4597-83c7-785f3ca1702f" width="45%">
+  <img src="https://github.com/user-attachments/assets/ab6469e1-34fa-4376-ae2a-a153741fde69" width="45%">
+</p>
+
+<h3>Now Playing & Trending | Trending Container</h3>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/12b2042e-b6b9-4443-9575-ffce3423f0e1" width="45%">
+  <img src="https://github.com/user-attachments/assets/a5e0762a-3ff2-42be-9a22-e4ca3357e867" width="45%">
+</p>
+
+<h3>Top Rated Container | Popular & Upcoming Container</h3>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/83f0178d-ee93-4800-ab1c-7173d44546b5" width="45%">
+  <img src="https://github.com/user-attachments/assets/bd1b9dab-5571-42b7-8bd1-07e86283715d" width="45%">
+</p>
+
+<h3>GPT Search Page | Recommended Results</h3>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0ff10791-0f4c-49cb-9e6f-f90f09b36cbf" width="45%">
+  <img src="https://github.com/user-attachments/assets/0f8ff2bc-7256-49f3-959e-aace4c05d943" width="45%">
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
