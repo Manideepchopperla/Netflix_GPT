@@ -32,31 +32,21 @@
 - Build Secondary Container
 - Build MovieList
 - Build MovieCard
-
-
-...
-
-# Features
-- Login/Sign Up
-    - Sign In /Sign up Form
-    - redirect to Browse Page
-- Browse(after authentication)
-    - Header
-    - Main Movie
-        - Tailer in Background
-        - Title and Description
-        - MovieSuggestions
-            - MovieLists * N
-- NetflixGPT
-    - Search Bar
-    - Movie Suggestions
- 
-  
-...
-
-
-# Project Setup
-- Before starting the project please add .env file and add TMDB API and GEMINI AI API key into it.
+- TMDB Image CDN URL
+- Made the Browsre page amazing with Tailwind CSS
+- usePopularMovies Custom hook
+- GPT Search Page
+- GPT Search Bar
+- (BONUS) Multi-language Feature in our App)
+- Get Open AI Api Key
+- Gpt Search API Call
+- fetched gptMoviesSuggestions from TMDB
+- created gptSlice added data
+- Resused Movie List component to make movie suggestion container
+- Memoization
+- Added .env file
+- Adding .env file to gitignore
+- Made our Site Responsive
 
 ...
 
@@ -86,6 +76,33 @@
   <img src="https://github.com/user-attachments/assets/0ff10791-0f4c-49cb-9e6f-f90f09b36cbf" width="45%">
   <img src="https://github.com/user-attachments/assets/0f8ff2bc-7256-49f3-959e-aace4c05d943" width="45%">
 </p>
+
+
+...
+
+# Features
+- Login/Sign Up
+    - Sign In /Sign up Form
+    - redirect to Browse Page
+- Browse(after authentication)
+    - Header
+    - Main Movie
+        - Tailer in Background
+        - Title and Description
+        - MovieSuggestions
+            - MovieLists * N
+- NetflixGPT
+    - Search Bar
+    - Movie Suggestions
+ 
+  
+...
+
+
+# Project Setup
+- Before starting the project please add .env file and add TMDB API and GEMINI AI API key into it.
+
+...
 
 
 
